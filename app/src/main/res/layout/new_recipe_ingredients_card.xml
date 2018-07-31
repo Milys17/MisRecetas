@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/blanco"
+            android:gravity="center"
+            android:text="Añadir ingredientes"
+            android:textAlignment="center"
+            android:textColor="@color/gris"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/addIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_add_black_24dp" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Mercado.ListadoIngredientesMercado">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buscar" />
+    </android.support.design.widget.TextInputLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
+
+            <RadioGroup
+                android:id="@+id/div"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/ic_dashboard_black_24dp" />
+
+                <RadioButton
+                    android:id="@+id/todo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Todo" />
+
+                <RadioButton
+                    android:id="@+id/verduras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="Verduras" />
+
+                <RadioButton
+                    android:id="@+id/frutas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="Frutas" />
+
+                <RadioButton
+                    android:id="@+id/especias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="Especias" />
+
+                <RadioButton
+                    android:id="@+id/cereales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="Cereales" />
+
+                <RadioButton
+                    android:id="@+id/leguminosas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="Leguminosas" />
+
+                <RadioButton
+                    android:id="@+id/carnes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="Carnes" />
+
+                <RadioButton
+                    android:id="@+id/mariscos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="Mariscos" />
+
+                <RadioButton
+                    android:id="@+id/chatarra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="Chatarra" />
+
+                <RadioButton
+                    android:id="@+id/lacteos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="Lacteos" />
+
+                <RadioButton
+                    android:id="@+id/otros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="Otros" />
+            </RadioGroup>
+    </HorizontalScrollView>
+
+    <GridView
+        android:id="@+id/ingredientesGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/nav_bar_margin_bottom"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ingredienteTexto"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/blanco"
+            android:maxLines="2"
+            android:text="Ingrediente"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/uso"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/less"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blanco"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blanco"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

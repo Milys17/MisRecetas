@@ -1,0 +1,417 @@
+<resources>
+    <string name="app_name">Mis Recetas</string>
+    <string name="nav_recetas">Recetas</string>
+    <string name="nav_mercado">mercado</string>
+    <string name="nav_menu">Menu Semanal</string>
+
+    <!-- ******************************** Ingredientes ****************************************  -->
+
+    <string-array name="verduras">
+        <item>Acelga</item>
+        <item>Aguacate</item>
+        <item>Ajo</item>
+        <item>Alcachofa</item>
+        <item>Apio</item>
+        <item>Berenjena</item>
+        <item>Betabel</item>
+        <item>Brócoli</item>
+        <item>Calabacitas</item>
+        <item>Calabaza</item>
+        <item>Camote</item>
+        <item>Cebolla Blanca</item>
+        <item>Cebolla Morada</item>
+        <item>Champiñon</item>
+        <item>Chile Cuaresmeño</item>
+        <item>Chile Jalapeño</item>
+        <item>Chile Pasilla</item>
+        <item>Chile Serrano</item>
+        <item>Cilantro</item>
+        <item>Coliflor</item>
+        <item>Elote</item>
+        <item>Espárrago</item>
+        <item>Lechuga</item>
+        <item>Papa</item>
+        <item>Pepino</item>
+        <item>Pimiento Morron Rojo</item>
+        <item>Pimiento Morron Verde</item>
+        <item>Pimiento Morron Naranja</item>
+        <item>Pimiento Morron Amarillo</item>
+        <item>Rábano</item>
+        <item>Repollo</item>
+        <item>Repollo Morado</item>
+        <item>Tomate</item>
+        <item>Tomatillo</item>
+        <item>Zanahoria</item>
+    </string-array>
+
+    <integer-array name="verduras_unidad">
+        <item>2</item>
+        <item>3</item>
+        <item>8</item>
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>0</item>
+        <item>3</item>
+        <item>0</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>3</item>
+        <item>0</item>
+        <item>3</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>3</item>
+        <item>0</item>
+        <item>0</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+    </integer-array>
+    <!-- *************************************************************************************** -->
+    <string-array name="frutas">
+        <item>Cereza</item>
+        <item>Ciruela</item>
+        <item>Coco</item>
+        <item>Datil</item>
+        <item>Frambuesa</item>
+        <item>Fresa</item>
+        <item>Granada</item>
+        <item>Guayaba</item>
+        <item>Higo</item>
+        <item>Kiwi</item>
+        <item>Limón</item>
+        <item>Nuez</item>
+        <item>Mango</item>
+        <item>Manzana</item>
+        <item>Melon</item>
+        <item>Naranja</item>
+        <item>Nectarina</item>
+        <item>Papaya</item>
+        <item>Pera</item>
+        <item>Pistacho</item>
+        <item>Piña</item>
+        <item>Pitahaya</item>
+        <item>Plátano</item>
+        <item>Sandía</item>
+        <item>Tamarindo</item>
+        <item>Uva</item>
+        <item>Zarzamora</item>
+    </string-array>
+
+    <string-array name="frutas_unidad">
+        <item>9</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>8</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>8</item>
+        <item>0</item>
+        <item>3</item>
+        <item>0</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
+    <!-- *************************************************************************************** -->
+    <string-array name="especias">
+        <item>Achiote</item>
+        <item>Ajonjolí</item>
+        <item>Albahacar</item>
+        <item>Anís</item>
+        <item>Azafrán</item>
+        <item>Canela</item>
+        <item>Clavo</item>
+        <item>Comino</item>
+        <item>Cúrcuma</item>
+        <item>Epazote</item>
+        <item>Estragón</item>
+        <item>Eneldo</item>
+        <item>Hierbabuena</item>
+        <item>Jengibre</item>
+        <item>Laurel</item>
+        <item>Menta</item>
+        <item>Nuez Moscada</item>
+        <item>Orégano</item>
+        <item>Perejil</item>
+        <item>Paprika</item>
+        <item>Pimienta Negra</item>
+        <item>Romero</item>
+        <item>Sal</item>
+        <item>Tomillo</item>
+        <item>Vainilla</item>
+        <item>Wasabi</item>
+    </string-array>
+
+    <integer-array name="especias_unidad">
+        <item>8</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>8</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>2</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>0</item>
+        <item>4</item>
+    </integer-array>
+    <!-- *************************************************************************************** -->
+    <string-array name="cereales">
+        <item>Avena</item>
+        <item>Arroz</item>
+        <item>Arroz Integral</item>
+        <item>Cebada</item>
+        <item>Cereal de Desayuno</item>
+        <item>Trigo</item>
+        <item>Harina de Trigo</item>
+        <item>Harina de Maiz</item>
+        <item>Pan de Barra</item>
+        <item>Pasta Fetuccini</item>
+        <item>Pasta de Codito</item>
+        <item>Pasta Espagetti</item>
+        <item>Pasta para Lasagna</item>
+    </string-array>
+
+    <integer-array name="cereales_unidad">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>8</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>8</item>
+        <item>8</item>
+        <item>8</item>
+        <item>8</item>
+        <item>8</item>
+    </integer-array>
+    <!-- *************************************************************************************** -->
+    <string-array name="leguminosas">
+        <item>Alfalfa</item>
+        <item>Frijol</item>
+        <item>Lentejas</item>
+        <item>Cacahuate</item>
+        <item>Garbanzo</item>
+        <item>Soya</item>
+        <item>Chicharo</item>
+        <item>Ejotes</item>
+    </string-array>
+
+    <integer-array name="leguminosas_unidad">
+        <item>8</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>8</item>
+        <item>3</item>
+    </integer-array>
+    <!-- *************************************************************************************** -->
+    <string-array name="carnes">
+        <item>Huevo</item>
+        <item>Pechuga de Pollo</item>
+        <item>Pierna de Pollo</item>
+        <item>Carne de Bistek</item>
+        <item>Carne de Cerdo</item>
+        <item>Carne de Res</item>
+    </string-array>
+
+    <integer-array name="carnes_unidad">
+        <item>0</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+    </integer-array>
+    <!-- *************************************************************************************** -->
+    <string-array name="mariscos">
+        <item>Almeja</item>
+        <item>Atún</item>
+        <item>Camarón</item>
+        <item>Pescado</item>
+    </string-array>
+
+    <integer-array name="mariscos_unidad">
+        <item>3</item>
+        <item>0</item>
+        <item>3</item>
+        <item>3</item>
+    </integer-array>
+    <!-- *************************************************************************************** -->
+    <string-array name="chatarra">
+        <item>Doritos</item>
+        <item>Frituras en Rueda</item>
+        <item>Ruffles</item>
+    </string-array>
+
+    <string-array name="chatarra_unidad">
+        <item>8</item>
+        <item>8</item>
+        <item>8</item>
+    </string-array>
+    <!-- *************************************************************************************** -->
+    <string-array name="lacteos">
+        <item>Crema</item>
+        <item>Leche</item>
+        <item>Maantequilla</item>
+        <item>Queso</item>
+        <item>Queso Crema</item>
+    </string-array>
+
+    <string-array name="lacteos_unidad">
+        <item>0</item>
+        <item>1</item>
+        <item>8</item>
+        <item>0</item>
+        <item>0</item>
+    </string-array>
+    <!-- *************************************************************************************** -->
+    <string-array name="otros">
+        <item>Aceite</item>
+        <item>Azucar Morena</item>
+        <item>Azucar Granulada</item>
+        <item>Azucar Glass</item>
+        <item>Galletas Saladas</item>
+        <item>Galletas Marias</item>
+        <item>Tostadas</item>
+    </string-array>
+
+    <string-array name="otros_unidad">
+        <item>1</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>8</item>
+        <item>8</item>
+        <item>8</item>
+    </string-array>
+    <!-- ************************************************************************* -->
+
+
+    <!--                                                                                         -->
+    <string-array name="categoria">
+        <item>Categoria</item>
+        <item>Desayuno</item>
+        <item>Comida</item>
+        <item>Cena</item>
+        <item>Botana</item>
+        <item>Bebida</item>
+        <item>Postre</item>
+    </string-array>
+
+    <!-- Configuraciones -->
+    <string-array name="unidad_normal">
+        <item>Pieza</item>
+        <item>Litro</item>
+        <item>Mazo</item>
+        <item>Kilo</item>
+        <item>Gramo</item>
+        <item>Cucharada</item>
+        <item>Cucharadita</item>
+        <item>Mililitro</item>
+        <item>Paquete</item>
+        <item>Frasco</item>
+        <item>Taza</item>
+    </string-array>
+
+    <string-array name="unidad_normal_plural">
+        <item>Piezas</item>
+        <item>Litros</item>
+        <item>Mazos</item>
+        <item>Kilos</item>
+        <item>Gramos</item>
+        <item>Cucharadas</item>
+        <item>Cucharaditas</item>
+        <item>Mililitros</item>
+        <item>Paquetes</item>
+        <item>Frascos</item>
+        <item>Tazas</item>
+    </string-array>
+
+    <string-array name="unidad_abreviatura">
+        <item>Pz</item>
+        <item>Lt</item>
+        <item>Mz</item>
+        <item>Kg</item>
+        <item>G</item>
+        <item>Ts</item>
+        <item>Tts</item>
+        <item>Ml</item>
+        <item>Paq</item>
+        <item>Fr</item>
+        <item>Tz</item>
+    </string-array>
+
+    <string-array name="unidad_abreviatura_plural">
+        <item>Pz</item>
+        <item>Lt</item>
+        <item>Mz</item>
+        <item>Kg</item>
+        <item>G</item>
+        <item>Ts</item>
+        <item>Tts</item>
+        <item>Ml</item>
+        <item>Paq</item>
+        <item>Fr</item>
+        <item>Tz</item>
+    </string-array>
+    <string-array name="votacion">
+        <item>votar</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources><!-- String[] some_array = getResources().getStringArray(R.array.your_string_array) -->
