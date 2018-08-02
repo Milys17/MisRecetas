@@ -1,18 +1,28 @@
 package com.pudin.misrecetas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import com.ncapdevi.fragnav.FragNavController;
 import com.ncapdevi.fragnav.FragNavSwitchController;
 import com.ncapdevi.fragnav.FragNavTransactionOptions;
+import com.pudin.misrecetas.A_Adaptadores.NuevaRecetaAdapter;
+import com.pudin.misrecetas.A_Modelos.Receta;
 import com.pudin.misrecetas.Menu_Semanal.MenuSemanal;
 import com.pudin.misrecetas.Mercado.Mercado;
+import com.pudin.misrecetas.Recetas.RecetaImage;
 import com.pudin.misrecetas.Recetas.Recetas;
+import com.squareup.picasso.Picasso;
+
+import java.io.File;
+
+import pl.aprilapps.easyphotopicker.EasyImage;
 
 public class MainActivity extends AppCompatActivity implements FragNavController.RootFragmentListener, BottomNavigationView.OnNavigationItemSelectedListener{
     public FragNavController.Builder builder;
@@ -83,4 +93,29 @@ public class MainActivity extends AppCompatActivity implements FragNavController
     public void pushFragment(Fragment fragment) {
         mFragNavController.pushFragment(fragment);
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        EasyImage.handleActivityResult(requestCode, resultCode, data, this, new EasyImage.Callbacks() {
+            @Override
+            public void onImagePickerError(Exception e, EasyImage.ImageSource source, int type) {
+
+            }
+
+            @Override
+            public void onImagePicked(File imageFile, EasyImage.ImageSource source, int type) {
+                Log.e("mostrar","llega hasta aca");
+                RecetaImage.uriImagen = imageFile.toURI();
+                Picasso.get().load(imageFile).into(RecetaImage.imagen);
+            }
+
+            @Override
+            public void onCanceled(EasyImage.ImageSource source, int type) {
+
+            }
+        });
+    }
 }
+
+

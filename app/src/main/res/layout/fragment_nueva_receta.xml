@@ -9,7 +9,6 @@
         android:id="@+id/nueva_receta_gridview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
         android:numColumns="1"
         android:layout_marginRight="200dp"
         android:layout_marginLeft="200dp"/>

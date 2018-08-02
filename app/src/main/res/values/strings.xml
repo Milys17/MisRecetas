@@ -412,6 +412,9 @@
         <item>5</item>
     </string-array>
 
+    <string name="aceptar">Aceptar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imagen_erronea">No hay imagen que guardar</string>
+    <string name="imagen_no_seleccionada">Error al agregar imagen</string>
 </resources><!-- String[] some_array = getResources().getStringArray(R.array.your_string_array) -->

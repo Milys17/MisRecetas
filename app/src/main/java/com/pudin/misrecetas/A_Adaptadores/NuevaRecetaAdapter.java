@@ -1,7 +1,10 @@
 package com.pudin.misrecetas.A_Adaptadores;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,18 +18,40 @@ import com.pudin.misrecetas.A_Ayudantes.Extra;
 import com.pudin.misrecetas.MainActivity;
 import com.pudin.misrecetas.Mercado.ListadoIngredientesMercado;
 import com.pudin.misrecetas.R;
+import com.pudin.misrecetas.Recetas.RecetaImage;
+import com.squareup.picasso.Picasso;
+
+import java.io.File;
+import java.util.ArrayList;
+
+import pl.aprilapps.easyphotopicker.DefaultCallback;
+import pl.aprilapps.easyphotopicker.EasyImage;
+
 public class NuevaRecetaAdapter extends BaseAdapter{
 
     private Context mContext;
     private ImageView imagen;
     private ImageButton ingredientes;
-    private Spinner categoria,valor;
     private EditText noPersonas,procedimiento;
-
-
+    private Spinner Categoria;
+    private String nombre,imgUri,categoria,descripcion;
+    private ArrayList<String> ingrediente,unidad,cantidad;
     public NuevaRecetaAdapter(Context mContext){
         this.mContext = mContext;
+
     }
+
+    public NuevaRecetaAdapter(Context mContext, String nombre, String imgUri, String categoria, String description, ArrayList<String> ingrediente,ArrayList<String> unidad,ArrayList<String> cantidad){
+        this.mContext = mContext;
+        this.nombre = nombre;
+        this.imgUri = imgUri;
+        this.categoria = categoria;
+        this.descripcion = description;
+        this.ingrediente = ingrediente;
+        this.unidad = unidad;
+        this.cantidad = cantidad;
+    }
+
 
 
     @Override
@@ -48,24 +73,19 @@ public class NuevaRecetaAdapter extends BaseAdapter{
     public View getView(int i, View view, ViewGroup viewGroup) {
         switch (i){
             case 0: view = LayoutInflater.from(mContext).inflate(R.layout.new_recipe_image_card, viewGroup, false);
-                imagen = view.findViewById(R.id.imagenReceta);
+                imagen = view.findViewById(R.id.imageRecipe);
                 imagen.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(final View view) {
-                        view.post(new Runnable() {
-                            @Override
-                            public void run() {
-
-                            }
-                        });
+                        RecetaImage fragment = new RecetaImage(mContext);
+                        Extra.pushFragment((MainActivity) mContext,fragment);
                     }
                 });
+
                 break;
 
             case 1: view = LayoutInflater.from(mContext).inflate(R.layout.new_recipe_settings_card, viewGroup, false);
-                    categoria = view.findViewById(R.id.categoriaSpinner);
-                    noPersonas = view.findViewById(R.id.numeroPersonas);
-                    valor = view.findViewById(R.id.valor);
+                    Categoria = view.findViewById(R.id.categoriaSpinner);
             break;
 
             case 2: view = LayoutInflater.from(mContext).inflate(R.layout.new_recipe_ingredients_card, viewGroup, false);
@@ -88,4 +108,5 @@ public class NuevaRecetaAdapter extends BaseAdapter{
         }
         return view;
     }
+
 }

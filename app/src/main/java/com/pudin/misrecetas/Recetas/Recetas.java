@@ -56,7 +56,6 @@ public class Recetas extends Fragment {
     private void fillRecipes(){
         for (int x=0;x<10;x++){
             Receta recipe = new Receta();
-            recipe.setImagen(new Extra().fromURLtoURI("https://image.flaticon.com/icons/png/512/532/532437.png"));
             recipe.setNombre("Nombre");
             recipe.setCategoria("Categoria");
             recipe.setVotacion(x);

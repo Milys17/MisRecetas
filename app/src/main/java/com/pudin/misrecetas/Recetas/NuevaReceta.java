@@ -31,7 +31,13 @@ public class NuevaReceta extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_nueva_receta, container, false);
         gridView = view.findViewById(R.id.nueva_receta_gridview);
-        adapter = new NuevaRecetaAdapter(getContext());
+        if(getArguments() == null){
+            // inicial
+            adapter = new NuevaRecetaAdapter(getContext());
+        }else{
+            // previamente llenado
+            adapter = new NuevaRecetaAdapter(getContext());
+        }
         gridView.setAdapter(adapter);
         return view;
     }

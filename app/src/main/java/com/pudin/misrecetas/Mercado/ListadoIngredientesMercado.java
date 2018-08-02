@@ -189,7 +189,6 @@ public class ListadoIngredientesMercado extends Fragment {
         todos.setChecked(true);
         ingredientes = view.findViewById(R.id.ingredientesGrid);
         ingredientes.setFocusable(true);
-
         switch (uso){
             case 0: adapter = new IngredientesAdapter(mContext, todo,unidad_tod,lista); break;
             case 1: adapter = new IngredientesAdapter(mContext, todo,lista); break;
